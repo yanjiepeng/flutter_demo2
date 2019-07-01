@@ -20,7 +20,7 @@ class RegisterFirstPage extends StatelessWidget {
             onPressed: (){
                 Navigator.pushNamed(context, '/registerSecond');
 
-                //替换路由
+                //替换路由 用目的界面直接替换掉当前界面
                 // Navigator.of(context).pushReplacementNamed('/registerSecond');
             },
           )

@@ -12,12 +12,19 @@ class Tabs extends StatefulWidget {
   Tabs({this.index,Key key}) : super(key: key);
 
 
-  _TabsState createState() => _TabsState();
+  _TabsState createState() => _TabsState(this.index);
 }
 
 class _TabsState extends State<Tabs> {
 
+
   int _currentIndex=0;
+
+  _TabsState(int index){
+    this._currentIndex = index;
+  }
+
+
   List _pageList=[
     HomePage(),
     CategoryPage(),
@@ -58,4 +65,5 @@ class _TabsState extends State<Tabs> {
         ),
       );
   }
+
 }

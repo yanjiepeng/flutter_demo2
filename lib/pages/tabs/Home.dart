@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'SearchPage.dart';
-
 class HomePage extends StatefulWidget {
   HomePage({Key key}) : super(key: key);
 
@@ -12,46 +10,59 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisAlignment: MainAxisAlignment.start,
       children: <Widget>[
         RaisedButton(
-          onPressed: () {
-//            基本路由
-//            Navigator.of(context).push(MaterialPageRoute(
-//              builder: (context) => SearchPage(),
-//            ));
-
-            //统一方式路由并传值
-
-            Navigator.pushNamed(context, '/Search', arguments: {'id': '123'});
-          },
-          child: Text('跳转到搜索界面'),
-          color: Theme.of(context).accentColor,
-          textTheme: ButtonTextTheme.primary,
-        ),
-        SizedBox(
-          height: 200,
-        ),
+            child: Text("跳转到搜索页面"),
+            onPressed: () {
+              //路由跳转
+              Navigator.pushNamed(context, '/search', arguments: {"id": 123});
+            },
+            color: Theme.of(context).accentColor,
+            textTheme: ButtonTextTheme.primary),
+        SizedBox(height: 20),
         RaisedButton(
-          onPressed: () {
-            //路由传值 通过构造方法  基本路由
-            //Navigator.of(context).push(MaterialPageRoute(builder: (context) => FormPage( title:'我是跳转传值')));
-
-            //命名路由
-            Navigator.pushNamed(context, '/FormPage');
-          },
-          child: Text('跳转到表单并传值'),
-          color: Theme.of(context).accentColor,
-          textTheme: ButtonTextTheme.primary,
-        ),
+            child: Text("跳转到商品页面"),
+            onPressed: () {
+              Navigator.pushNamed(context, '/product');
+            }),
+        SizedBox(height: 20),
         RaisedButton(
-          onPressed: () {
-            Navigator.pushNamed(context, '/product',arguments:{'id':'12345'});
-
-          },
-          child: Text('跳转到商品'),
-          color: Theme.of(context).accentColor,
-          textTheme: ButtonTextTheme.primary,
-        )
+            child: Text("跳转到TabController"),
+            onPressed: () {
+              Navigator.pushNamed(context, '/tabcontroller');
+            }),
+        SizedBox(height: 20),
+        RaisedButton(
+            child: Text("跳转到ButtonDemo"),
+            onPressed: () {
+              Navigator.pushNamed(context, '/buttondemo');
+            }),
+        SizedBox(height: 10),
+        RaisedButton(
+            child: Text("跳转到表单演示"),
+            onPressed: () {
+              Navigator.pushNamed(context, '/textfielddemo');
+            }),
+        SizedBox(height: 10),
+        RaisedButton(
+            child: Text("跳转到Radio演示"),
+            onPressed: () {
+              Navigator.pushNamed(context, '/RadioDemo');
+            }),
+        SizedBox(height: 10),
+        RaisedButton(
+            child: Text("跳转到信息登记系统"),
+            onPressed: () {
+              Navigator.pushNamed(context, '/formdemo');
+            }),
+        SizedBox(height: 10),
+        RaisedButton(
+            child: Text("跳转到日期演示demo"),
+            onPressed: () {
+              Navigator.pushNamed(context, '/datedemo');
+            }),
       ],
     );
   }

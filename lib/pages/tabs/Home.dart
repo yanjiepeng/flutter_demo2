@@ -13,56 +13,84 @@ class _HomePageState extends State<HomePage> {
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment: MainAxisAlignment.start,
       children: <Widget>[
-        RaisedButton(
-            child: Text("跳转到搜索页面"),
-            onPressed: () {
-              //路由跳转
-              Navigator.pushNamed(context, '/search', arguments: {"id": 123});
-            },
-            color: Theme.of(context).accentColor,
-            textTheme: ButtonTextTheme.primary),
-        SizedBox(height: 20),
-        RaisedButton(
-            child: Text("跳转到商品页面"),
-            onPressed: () {
-              Navigator.pushNamed(context, '/product');
-            }),
-        SizedBox(height: 20),
+        Row(
+          children: <Widget>[
+            RaisedButton(
+                child: Text("跳转到图片轮播测试DEMO"),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/swipperdemo');
+                }),
+            SizedBox(width: 10),
+            RaisedButton(
+                child: Text("跳转到搜索页面"),
+                onPressed: () {
+                  //路由跳转
+                  Navigator.pushNamed(context, '/search',
+                      arguments: {"id": 123});
+                },
+                color: Theme.of(context).accentColor,
+                textTheme: ButtonTextTheme.primary),
+          ],
+        ),
+        SizedBox(height: 10),
+        Row(
+          children: <Widget>[
+            RaisedButton(
+                child: Text("跳转到商品页面"),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/product');
+                }),
+            RaisedButton(
+                child: Text("Dialog&Toast"),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/dialog');
+                }),
+
+
+
+          ],
+        ),
+
+        SizedBox(height: 10),
         RaisedButton(
             child: Text("跳转到TabController"),
             onPressed: () {
               Navigator.pushNamed(context, '/tabcontroller');
             }),
-        SizedBox(height: 20),
+        SizedBox(height: 10),
         RaisedButton(
             child: Text("跳转到ButtonDemo"),
             onPressed: () {
               Navigator.pushNamed(context, '/buttondemo');
             }),
         SizedBox(height: 10),
-        RaisedButton(
-            child: Text("跳转到表单演示"),
-            onPressed: () {
-              Navigator.pushNamed(context, '/textfielddemo');
-            }),
-        SizedBox(height: 10),
-        RaisedButton(
-            child: Text("跳转到Radio演示"),
-            onPressed: () {
-              Navigator.pushNamed(context, '/RadioDemo');
-            }),
-        SizedBox(height: 10),
-        RaisedButton(
-            child: Text("跳转到信息登记系统"),
-            onPressed: () {
-              Navigator.pushNamed(context, '/formdemo');
-            }),
-        SizedBox(height: 10),
-        RaisedButton(
-            child: Text("跳转到日期演示demo"),
-            onPressed: () {
-              Navigator.pushNamed(context, '/datedemo');
-            }),
+        Wrap(
+          children: <Widget>[
+            RaisedButton(
+                child: Text("跳转到表单演示"),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/textfielddemo');
+                }),
+            SizedBox(width: 10),
+            RaisedButton(
+                child: Text("跳转到Radio演示"),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/RadioDemo');
+                }),
+            SizedBox(width: 10),
+            RaisedButton(
+                child: Text("跳转到信息登记系统"),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/formdemo');
+                }),
+            SizedBox(width: 10),
+            RaisedButton(
+                child: Text("跳转到日期演示demo"),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/datedemo');
+                }),
+          ],
+        ),
       ],
     );
   }

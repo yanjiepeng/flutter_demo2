@@ -3,7 +3,8 @@ import 'package:flutter_demo2/date/Datedemo.dart';
 import 'package:flutter_demo2/pages/AppBarDemo.dart';
 import 'package:flutter_demo2/pages/BottomNavigation.dart';
 import 'package:flutter_demo2/pages/ButtonDemoPage.dart';
-import 'package:flutter_demo2/pages/DialogDemo.dart';
+import 'package:flutter_demo2/pages/dialog/CustomDialog.dart';
+import 'package:flutter_demo2/pages/dialog/DialogDemo.dart';
 import 'package:flutter_demo2/pages/FormPage.dart';
 import 'package:flutter_demo2/pages/Product.dart';
 import 'package:flutter_demo2/pages/ProductInfo.dart';
@@ -34,6 +35,7 @@ final routes = {
   '/datedemo': (context) => DateDemo(),
   '/swipperdemo': (context) => SwiperDemo(),
   '/dialog': (context) => DialogDemo(),
+  '/customdialog': (context) => CustomDialogPage(),
   '/search': (context, {arguments}) => SearchPage(arguments: arguments),
   '/product': (context, {arguments}) => ProductPage(arguments: arguments),
   '/productInfo': (context, {arguments}) => ProductInfo(arguments: arguments),

@@ -45,6 +45,11 @@ class _HomePageState extends State<HomePage> {
                 onPressed: () {
                   Navigator.pushNamed(context, '/dialog');
                 }),
+            RaisedButton(
+                child: Text("自定义dialog"),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/customdialog');
+                }),
 
 
 

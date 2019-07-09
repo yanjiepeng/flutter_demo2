@@ -1,6 +1,7 @@
 # flutter_demo2
 
-A new Flutter application.
+Flutter学习入门Demo 
+###
 
 ## Getting Started
 

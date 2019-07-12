@@ -50,12 +50,8 @@ class _HomePageState extends State<HomePage> {
                 onPressed: () {
                   Navigator.pushNamed(context, '/customdialog');
                 }),
-
-
-
           ],
         ),
-
         SizedBox(height: 10),
         RaisedButton(
             child: Text("跳转到TabController"),
@@ -94,6 +90,27 @@ class _HomePageState extends State<HomePage> {
                 onPressed: () {
                   Navigator.pushNamed(context, '/datedemo');
                 }),
+            SizedBox(
+              height: 5,
+            ),
+            RaisedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/simplenet');
+              },
+              child: Text('简易网络请求'),
+            ),
+            RaisedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/diodemo');
+              },
+              child: Text('Dio网络请求'),
+            ),
+            RaisedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/newspage');
+              },
+              child: Text('新闻翻页demo'),
+            ),
           ],
         ),
       ],

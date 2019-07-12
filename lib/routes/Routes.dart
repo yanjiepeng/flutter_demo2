@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo2/date/Datedemo.dart';
+import 'package:flutter_demo2/net/DioDemoPage.dart';
+import 'package:flutter_demo2/net/SimpleNetPage.dart';
+import 'package:flutter_demo2/newsdemo/NewsContent.dart';
+import 'package:flutter_demo2/newsdemo/news.dart';
 import 'package:flutter_demo2/pages/AppBarDemo.dart';
 import 'package:flutter_demo2/pages/BottomNavigation.dart';
 import 'package:flutter_demo2/pages/ButtonDemoPage.dart';
@@ -36,6 +40,10 @@ final routes = {
   '/swipperdemo': (context) => SwiperDemo(),
   '/dialog': (context) => DialogDemo(),
   '/customdialog': (context) => CustomDialogPage(),
+  '/simplenet': (context) => SimpleNetPage(),
+  '/diodemo': (context) => DioDemoPage(),
+  '/newspage': (context) => NewsPage(),
+  '/newscontent': (context,{arguments}) => NewsContent(arguments:arguments),
   '/search': (context, {arguments}) => SearchPage(arguments: arguments),
   '/product': (context, {arguments}) => ProductPage(arguments: arguments),
   '/productInfo': (context, {arguments}) => ProductInfo(arguments: arguments),

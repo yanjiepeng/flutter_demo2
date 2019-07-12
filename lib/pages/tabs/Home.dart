@@ -111,6 +111,21 @@ class _HomePageState extends State<HomePage> {
               },
               child: Text('新闻翻页demo'),
             ),
+
+            RaisedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/deviceinfo');
+              },
+              child: Text('读取设备信息'),
+            ),
+
+
+            RaisedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/getlocation');
+              },
+              child: Text('高德地图定位'),
+            ),
           ],
         ),
       ],

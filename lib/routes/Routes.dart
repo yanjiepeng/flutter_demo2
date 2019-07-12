@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo2/date/Datedemo.dart';
+import 'package:flutter_demo2/deviceinfo/DeviceInfoPage.dart';
+import 'package:flutter_demo2/map/GDMapDemo.dart';
 import 'package:flutter_demo2/net/DioDemoPage.dart';
 import 'package:flutter_demo2/net/SimpleNetPage.dart';
 import 'package:flutter_demo2/newsdemo/NewsContent.dart';
@@ -43,6 +45,8 @@ final routes = {
   '/simplenet': (context) => SimpleNetPage(),
   '/diodemo': (context) => DioDemoPage(),
   '/newspage': (context) => NewsPage(),
+  '/deviceinfo': (context) => DeviceInfoPage(),
+  '/getlocation': (context) => GDMapDemo(),
   '/newscontent': (context,{arguments}) => NewsContent(arguments:arguments),
   '/search': (context, {arguments}) => SearchPage(arguments: arguments),
   '/product': (context, {arguments}) => ProductPage(arguments: arguments),

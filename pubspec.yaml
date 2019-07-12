@@ -29,6 +29,9 @@ dependencies:
   dio: ^2.1.13
   flutter_inappbrowser: ^1.2.1
   flutter_html: ^0.10.1+hotfix.1
+  device_info: ^0.4.0+2
+  amap_location: ^0.2.0
+  simple_permissions: ^0.1.9
   flutter_localizations:
     sdk: flutter
 

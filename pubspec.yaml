@@ -32,6 +32,7 @@ dependencies:
   device_info: ^0.4.0+2
   amap_location: ^0.2.0
   simple_permissions: ^0.1.9
+  image_picker: ^0.6.0+15
   flutter_localizations:
     sdk: flutter
 

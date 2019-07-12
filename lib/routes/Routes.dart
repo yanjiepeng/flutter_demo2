@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo2/camera/ImagePickerDemo.dart';
 import 'package:flutter_demo2/date/Datedemo.dart';
 import 'package:flutter_demo2/deviceinfo/DeviceInfoPage.dart';
 import 'package:flutter_demo2/map/GDMapDemo.dart';
@@ -7,7 +8,6 @@ import 'package:flutter_demo2/net/SimpleNetPage.dart';
 import 'package:flutter_demo2/newsdemo/NewsContent.dart';
 import 'package:flutter_demo2/newsdemo/news.dart';
 import 'package:flutter_demo2/pages/AppBarDemo.dart';
-import 'package:flutter_demo2/pages/BottomNavigation.dart';
 import 'package:flutter_demo2/pages/ButtonDemoPage.dart';
 import 'package:flutter_demo2/pages/dialog/CustomDialog.dart';
 import 'package:flutter_demo2/pages/dialog/DialogDemo.dart';
@@ -47,6 +47,7 @@ final routes = {
   '/newspage': (context) => NewsPage(),
   '/deviceinfo': (context) => DeviceInfoPage(),
   '/getlocation': (context) => GDMapDemo(),
+  '/imagepicker': (context) => ImagePickerDemo(),
   '/newscontent': (context,{arguments}) => NewsContent(arguments:arguments),
   '/search': (context, {arguments}) => SearchPage(arguments: arguments),
   '/product': (context, {arguments}) => ProductPage(arguments: arguments),

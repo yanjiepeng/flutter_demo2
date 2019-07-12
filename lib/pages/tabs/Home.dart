@@ -53,17 +53,21 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
         SizedBox(height: 10),
-        RaisedButton(
-            child: Text("跳转到TabController"),
-            onPressed: () {
-              Navigator.pushNamed(context, '/tabcontroller');
-            }),
-        SizedBox(height: 10),
-        RaisedButton(
-            child: Text("跳转到ButtonDemo"),
-            onPressed: () {
-              Navigator.pushNamed(context, '/buttondemo');
-            }),
+        Row(
+          children: <Widget>[
+            RaisedButton(
+                child: Text("跳转到TabController"),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/tabcontroller');
+                }),
+            SizedBox(height: 10),
+            RaisedButton(
+                child: Text("跳转到ButtonDemo"),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/buttondemo');
+                }),
+          ],
+        ),
         SizedBox(height: 10),
         Wrap(
           children: <Widget>[
@@ -111,20 +115,23 @@ class _HomePageState extends State<HomePage> {
               },
               child: Text('新闻翻页demo'),
             ),
-
             RaisedButton(
               onPressed: () {
                 Navigator.pushNamed(context, '/deviceinfo');
               },
               child: Text('读取设备信息'),
             ),
-
-
             RaisedButton(
               onPressed: () {
                 Navigator.pushNamed(context, '/getlocation');
               },
               child: Text('高德地图定位'),
+            ),
+            RaisedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/imagepicker');
+              },
+              child: Text('相机与相册'),
             ),
           ],
         ),

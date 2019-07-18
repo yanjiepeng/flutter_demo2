@@ -140,6 +140,13 @@ class _HomePageState extends State<HomePage> {
               },
               child: Text('视频播放'),
             ),
+
+            RaisedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/netstate');
+              },
+              child: Text('网络状态监控'),
+            )
           ],
         ),
       ],

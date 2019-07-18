@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_demo2/camera/ImagePickerDemo.dart';
 import 'package:flutter_demo2/date/Datedemo.dart';
 import 'package:flutter_demo2/deviceinfo/DeviceInfoPage.dart';
+import 'package:flutter_demo2/localdata/LocalDataDemo.dart';
 import 'package:flutter_demo2/map/GDMapDemo.dart';
 import 'package:flutter_demo2/net/DioDemoPage.dart';
 import 'package:flutter_demo2/net/NetConnect.dart';
@@ -55,6 +56,7 @@ final routes = {
   '/imagepicker': (context) => ImagePickerDemo(),
   '/videoplay': (context) => VideoPlayDemo(),
   '/netstate': (context) => NetConnectDemo(),
+  '/sp': (context) => LocalDataDemo(),
   '/newscontent': (context,{arguments}) => NewsContent(arguments:arguments),
   '/search': (context, {arguments}) => SearchPage(arguments: arguments),
   '/product': (context, {arguments}) => ProductPage(arguments: arguments),

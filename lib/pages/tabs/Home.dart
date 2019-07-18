@@ -9,9 +9,9 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      mainAxisAlignment: MainAxisAlignment.start,
+    return ListView(
+      scrollDirection: Axis.vertical,
+
       children: <Widget>[
         Row(
           children: <Widget>[
@@ -146,6 +146,25 @@ class _HomePageState extends State<HomePage> {
                 Navigator.pushNamed(context, '/netstate');
               },
               child: Text('网络状态监控'),
+            )
+            ,
+            SizedBox(height: 10,),
+            Row(
+              children: <Widget>[
+                RaisedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/sp');
+                  },
+                  child: Text('本地数据存贮'),
+                ),
+                RaisedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/sp');
+                  },
+                  child: Text('扫码'),
+                ),
+
+              ],
             )
           ],
         ),

@@ -133,6 +133,13 @@ class _HomePageState extends State<HomePage> {
               },
               child: Text('相机与相册'),
             ),
+
+            RaisedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/videoplay');
+              },
+              child: Text('视频播放'),
+            ),
           ],
         ),
       ],

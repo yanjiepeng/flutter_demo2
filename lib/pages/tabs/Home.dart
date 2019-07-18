@@ -159,7 +159,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 RaisedButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, '/sp');
+                    Navigator.pushNamed(context, '/qr');
                   },
                   child: Text('扫码'),
                 ),

@@ -25,6 +25,7 @@ import 'package:flutter_demo2/pages/UserPage.dart';
 import 'package:flutter_demo2/pages/fromdemo/formdemox.dart';
 import 'package:flutter_demo2/pages/tabs/SearchPage.dart';
 import 'package:flutter_demo2/pages/user/RegisterThird.dart';
+import 'package:flutter_demo2/qr/QrScanCode.dart';
 import 'package:flutter_demo2/video/VideoPlayDemo.dart';
 import '../pages/user/Login.dart';
 import '../pages/user/RegisterFirst.dart';
@@ -57,6 +58,7 @@ final routes = {
   '/videoplay': (context) => VideoPlayDemo(),
   '/netstate': (context) => NetConnectDemo(),
   '/sp': (context) => LocalDataDemo(),
+  '/qr': (context) => QrScanCode(),
   '/newscontent': (context,{arguments}) => NewsContent(arguments:arguments),
   '/search': (context, {arguments}) => SearchPage(arguments: arguments),
   '/product': (context, {arguments}) => ProductPage(arguments: arguments),

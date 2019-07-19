@@ -171,7 +171,7 @@ class _HomePageState extends State<HomePage> {
             ),
             RaisedButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/appversion');
+                Navigator.pushNamed(context, '/urllauncher');
               },
               child: Text('外部应用调用'),
             ),

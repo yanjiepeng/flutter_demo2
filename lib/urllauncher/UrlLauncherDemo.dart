@@ -16,24 +16,42 @@ class _UrlLauncherDemoState extends State<UrlLauncherDemo> {
           RaisedButton(
             onPressed: ()async {
 
-              const url = 'www.qq.com';
+              const url = 'http://www.qq.com';
               if(await canLaunch(url)){
-
+                  await launch(url);
               }else{
                 throw 'Could not launch $url';
               }
 
-
             },
             child: Text('浏览器打开url'),
           ),
+          SizedBox(width: 10,),
           RaisedButton(
-            onPressed: () {},
-            child: Text('浏览器打开url'),
+            onPressed: () async {
+
+                var tel = 'tel:10086';
+                 if(await canLaunch(tel)){
+                  await launch(tel);
+              }else{
+                throw 'Could not launch $tel';
+              }
+
+            },
+            child: Text('Call'),
           ),
           RaisedButton(
-            onPressed: () {},
-            child: Text('浏览器打开url'),
+            onPressed: () async {
+
+                var tel = 'sms:5550101234';
+                 if(await canLaunch(tel)){
+                  await launch(tel);
+              }else{
+                throw 'Could not launch $tel';
+              }
+
+            },
+            child: Text('SMS'),
           ),
         ],
       ),

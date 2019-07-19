@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo2/appversion/AppVersionDemo.dart';
 import 'package:flutter_demo2/camera/ImagePickerDemo.dart';
 import 'package:flutter_demo2/date/Datedemo.dart';
 import 'package:flutter_demo2/deviceinfo/DeviceInfoPage.dart';
@@ -59,6 +60,7 @@ final routes = {
   '/netstate': (context) => NetConnectDemo(),
   '/sp': (context) => LocalDataDemo(),
   '/qr': (context) => QrScanCode(),
+  '/appversion': (context) => AppVersionDemo(),
   '/newscontent': (context,{arguments}) => NewsContent(arguments:arguments),
   '/search': (context, {arguments}) => SearchPage(arguments: arguments),
   '/product': (context, {arguments}) => ProductPage(arguments: arguments),

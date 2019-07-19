@@ -11,7 +11,6 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return ListView(
       scrollDirection: Axis.vertical,
-
       children: <Widget>[
         Row(
           children: <Widget>[
@@ -133,22 +132,21 @@ class _HomePageState extends State<HomePage> {
               },
               child: Text('相机与相册'),
             ),
-
             RaisedButton(
               onPressed: () {
                 Navigator.pushNamed(context, '/videoplay');
               },
               child: Text('视频播放'),
             ),
-
             RaisedButton(
               onPressed: () {
                 Navigator.pushNamed(context, '/netstate');
               },
               child: Text('网络状态监控'),
-            )
-            ,
-            SizedBox(height: 10,),
+            ),
+            SizedBox(
+              height: 10,
+            ),
             Row(
               children: <Widget>[
                 RaisedButton(
@@ -163,9 +161,20 @@ class _HomePageState extends State<HomePage> {
                   },
                   child: Text('扫码'),
                 ),
-
+                RaisedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/appversion');
+                  },
+                  child: Text('app版本更新'),
+                ),
               ],
-            )
+            ),
+            RaisedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/appversion');
+              },
+              child: Text('外部应用调用'),
+            ),
           ],
         ),
       ],

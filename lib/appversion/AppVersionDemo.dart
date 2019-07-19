@@ -13,7 +13,6 @@ class _AppVersionDemoState extends State<AppVersionDemo> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
 
     this._getPackageInfo();
@@ -70,13 +69,13 @@ class _AppVersionDemoState extends State<AppVersionDemo> {
     String buildNumber = packageInfo.buildNumber;
 
 
-    print("appName:${appName}");
+    print("appName:$appName");
 
-    print("packageName:${packageName}");
+    print("packageName:$packageName");
 
-    print("version:${version}");
+    print("version:$version");
 
-    print("buildNumber:${buildNumber}");
+    print("buildNumber:$buildNumber");
 
   }
 

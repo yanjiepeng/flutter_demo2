@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-
+import 'package:floating_search_bar/floating_search_bar.dart';
 
 class SearchPage extends StatelessWidget {
-
   final arguments;
-
 
   SearchPage({this.arguments});
 
@@ -12,20 +10,27 @@ class SearchPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('SeachPage'),
-      ) ,
-      body: Column(
-        children: <Widget>[
-
-          Text('我是搜索页面内容'),
-
-          Text('搜索内容${this.arguments !=null ? arguments['id'] :'0'}')
-
-        ],
+        title: Text('searchpage'),
       ),
-
-
-
+      body: FloatingSearchBar.builder(
+          itemBuilder: (context, index) {
+            return ListTile(
+              leading: Text(index.toString()),
+            );
+          },
+          trailing: CircleAvatar(
+            child: Text('SE'),
+          ),
+          drawer: Drawer(
+            child: Container(),
+          ),
+          itemCount: 2,
+      
+          onChanged: (String value){
+            //获取搜索框的值
+          },
+          decoration: InputDecoration.collapsed(hintText: 'Search...'),
+      ),
     );
   }
 }
